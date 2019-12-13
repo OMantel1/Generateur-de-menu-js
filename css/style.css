@@ -1,0 +1,94 @@
+body{
+	max-width: 100%;
+	margin: auto;
+}
+
+
+/***** = HEADER *****/
+header{
+	background-color: #dfe6e9;
+}
+
+header h1{
+	color: #2d3436;
+    width: 100%;
+	margin: auto;
+	text-align: center;
+	font-size: 28px;
+    font-family: 'Lilita One', cursive;
+}
+
+header div{
+	width: 300px;
+	margin: auto;
+	text-align: center;
+}
+
+
+
+/***** = HEADER + Section *****/
+section,
+header{
+	padding: 30px;
+}
+
+
+
+/***** = SECTION *****/
+section{
+	display: flex;
+	justify-content: center;
+    background-color: #2d3436;
+}
+
+section li{
+    font-family: 'Lilita One', cursive;
+	font-size: 28px;
+	color: #dfe6e9;
+    background-color: #2d3436;
+	text-decoration: none;
+    list-style: none;
+	padding: 0px 30px;
+    text-align: center;
+}
+
+#menu{
+    display: none;
+}
+ul{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+button{
+    font-family: 'Lilita One', cursive;
+    font-size: 28px;
+	color: #2d3436;
+	text-decoration: none;
+	padding: 0px 30px;
+    border: none;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 0px 10px;
+    transition-duration: 0.4s;
+}
+
+button:hover{
+	color: #2d3436;
+    background-color: grey;
+}
+
+
+/***** = ICONS *****/
+
+.fas{
+	font-size: 34px;
+}
+.fa-utensils{
+float: left;
+}
+.fa-carrot{
+	color: #dfe6e9;
+}
+
