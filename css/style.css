@@ -15,7 +15,8 @@ header h1{
 	margin: auto;
 	text-align: center;
 	font-size: 28px;
-    font-family: 'Lilita One', cursive;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
 }
 
 header div{
@@ -42,7 +43,7 @@ section{
 }
 
 section li{
-    font-family: 'Lilita One', cursive;
+    font-family: 'Raleway', sans-serif;
 	font-size: 28px;
 	color: #dfe6e9;
     background-color: #2d3436;
@@ -62,8 +63,9 @@ ul{
 
 
 button{
-    font-family: 'Lilita One', cursive;
+    font-family: 'Raleway', sans-serif;
     font-size: 28px;
+    font-weight: 500;
 	color: #2d3436;
 	text-decoration: none;
 	padding: 0px 30px;
