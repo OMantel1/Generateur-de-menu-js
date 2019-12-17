@@ -3,6 +3,7 @@ Couleurs
 Gris clair: #dfe6e9;
 Gris foncé: #2d3436;
 */
+
 body{
 	max-width: 100%;
 	margin: auto;
@@ -16,18 +17,23 @@ header{
 
 header h1{
 	color: #2d3436;
-    width: 100%;
-	margin: auto;
 	text-align: center;
 	font-size: 28px;
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
+    border: Solid #2d3436 2px;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 0px 10px;
 }
 
 header div{
-	width: 300px;
 	margin: auto;
 	text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 
@@ -44,6 +50,7 @@ header{
 section{
 	display: flex;
 	justify-content: center;
+    align-items: center;
     background-color: #2d3436;
 }
 
@@ -94,9 +101,9 @@ button:hover{
 }
 .fa-utensils{
     color: #2d3436;
-float: left;
 }
 .fa-carrot{
 	color: #dfe6e9;
+    
 }
 
