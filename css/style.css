@@ -1,3 +1,8 @@
+/*
+Couleurs
+Gris clair: #dfe6e9;
+Gris foncé: #2d3436;
+*/
 body{
 	max-width: 100%;
 	margin: auto;
@@ -88,6 +93,7 @@ button:hover{
 	font-size: 34px;
 }
 .fa-utensils{
+    color: #2d3436;
 float: left;
 }
 .fa-carrot{
