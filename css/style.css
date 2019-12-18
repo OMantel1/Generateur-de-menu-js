@@ -106,3 +106,20 @@ button:hover{
     
 }
 
+@media screen and (max-width: 425px){
+    .fas{
+        font-size: 26px;
+    }
+    header h1,
+    button{
+        font-size: 22px;
+    }
+    section,
+    header{
+        padding: 10px;
+    }
+    section li{
+        font-size: 19px;
+    }
+}
+
