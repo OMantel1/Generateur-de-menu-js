@@ -26,8 +26,9 @@ header h1{
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     border: Solid #2d3436 2px;
-    border-radius: 12px;
     padding: 10px;
+    margin: 0px;
+    border-radius: 12px;
     width: 60%;
     
 }
