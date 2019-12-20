@@ -4,123 +4,146 @@ Gris clair: #dfe6e9;
 Gris foncé: #2d3436;
 */
 
-body{
-	max-width: 100%;
-	margin: auto;
-}
-
-
-/***** = HEADER *****/
-header{
-	background-color: #dfe6e9;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+body {
+    max-width: 100%;
     margin: auto;
-    text-align: center;
 }
 
-header h1{
-	color: #2d3436;
-	font-size: 28px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    border: Solid #2d3436 2px;
-    padding: 10px;
-    margin: 0px;
-    border-radius: 12px;
-    width: 60%;
-    
+
+section {
+    display: flex;
+    justify-content: center;
+    background-color: #2d3436;
 }
 
-/***** = HEADER + Section *****/
+
 section,
-header{
-	padding: 30px;
+header {
+    padding: 20px;
 }
 
 
-
-/***** = SECTION *****/
-section{
-	display: flex;
-	justify-content: center;
-    align-items: center;
-    background-color: #2d3436;
-}
-
-section li{
-    font-family: 'Raleway', sans-serif;
-	font-size: 24px;
-	color: #dfe6e9;
-    background-color: #2d3436;
-	text-decoration: none;
-    list-style: none;
-	padding: 0px 30px;
+header {
+    background-color: #dfe6e9;
+    display: flex;
+    justify-content: center;
     text-align: center;
 }
 
-#menu{
-    display: none;
-}
 
-ul{
-    margin: 0px;
-    padding: 0px;
+header h1 {
+    color: #2d3436;
+    border: Solid #2d3436 2px;
 }
 
 
-button{
-    width: 60%;
-    font-family: 'Raleway', sans-serif;
+header h1,
+button {
     font-size: 28px;
+    font-family: 'Raleway', sans-serif;
     font-weight: 500;
-	color: #2d3436;
-	text-decoration: none;
-	padding: 0px 30px;
-    border: none;
+    padding: 10px 50px;
+    margin: 0px;
     border-radius: 12px;
-    padding: 10px;
-    margin: 0px 10px;
+    position: relative;
+}
+
+
+button {
+    color: #2d3436;
+    text-decoration: none;
+    border: none;
     transition-duration: 0.4s;
 }
 
-button:hover{
-	color: #2d3436;
+
+button:hover {
     background-color: grey;
 }
 
 
+
+
+/***** = Liste *****/
+
+ul {
+    margin: 0px;
+    padding: 0px;
+}
+
+section li {
+    font-size: 24px;
+    font-family: 'Raleway', sans-serif;
+    color: #dfe6e9;
+    background-color: #2d3436;
+    text-decoration: none;
+    list-style: none;
+    padding: 0px 30px;
+    text-align: center;
+}
+
+
+
+/*utile pour le javascript*/
+#menu {
+    display: none;
+}
+
+
+
+
+
 /***** = ICONS *****/
 
-.fas{
-	font-size: 34px;
+.fas {
+    font-size: 30px;
     position: absolute;
-    left: 10%
-}
-.fa-utensils{
-    color: #2d3436;
- 
-}
-.fa-carrot{
-	color: #dfe6e9;
-    
+    left: 10px;
 }
 
-@media screen and (max-width: 425px){
-    .fas{
-        font-size: 26px;
-    }
+.fa-utensils,
+.fa-carrot{
+    color: #2d3436;
+}
+
+
+/***** = media queries *****/
+@media screen and (max-width: 425px) {
+
     header h1,
-    button{
+    button {
         font-size: 22px;
+        padding: 10px 40px;
     }
+
     section,
-    header{
+    header {
         padding: 10px;
     }
-    section li{
+
+    section li {
         font-size: 19px;
+    }
+
+    .fas {
+        font-size: 28px;
+        position: absolute;
+        left: 10px;
     }
 }
 
+
+@media screen and (max-width: 320px) {
+    .fas {
+        font-size: 26px;
+        position: absolute;
+        left: 10px;
+        top: 20px;
+    }
+
+    header h1,
+    button {
+        font-size: 22px;
+        padding: 10px 50px;
+    }
+}
