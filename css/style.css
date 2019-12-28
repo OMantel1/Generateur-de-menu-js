@@ -48,17 +48,44 @@ button {
     position: relative;
 }
 
+@keyframes rebond {
+    from {
+        transform: scale(1);
+    }
+
+    20% {
+        transform: scale(0.98);
+    }
+
+    40% {
+        transform: scale(1.02);
+    }
+
+    60%{
+        transform: scale(0.99);
+    }
+    
+    80%{
+        transform: scale(1.01);
+    }
+
+    to {
+        transform: scale(1.00);
+    }
+
+}
 
 button {
     color: #2d3436;
     text-decoration: none;
     border: none;
-    transition-duration: 0.4s;
+    
 }
 
 
 button:hover {
-    background-color: grey;
+    opacity:0.85;
+    animation: rebond 500ms ease-in-out;
 }
 
 
@@ -102,7 +129,7 @@ section li {
 }
 
 .fa-utensils,
-.fa-carrot{
+.fa-carrot {
     color: #2d3436;
 }
 
