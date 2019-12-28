@@ -2,6 +2,7 @@
 Couleurs
 Gris clair: #dfe6e9;
 Gris foncé: #2d3436;
+orange: darkorange;
 */
 
 body {
@@ -13,7 +14,7 @@ body {
 section {
     display: flex;
     justify-content: center;
-    background-color: #2d3436;
+    background-color: darkorange;
 }
 
 
@@ -24,7 +25,7 @@ header {
 
 
 header {
-    background-color: #dfe6e9;
+    background-color: whitesmoke;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -32,8 +33,8 @@ header {
 
 
 header h1 {
-    color: #2d3436;
-    border: Solid #2d3436 2px;
+    color: darkorange;
+    border: Solid darkorange 2px;
 }
 
 
@@ -61,11 +62,11 @@ button {
         transform: scale(1.02);
     }
 
-    60%{
+    60% {
         transform: scale(0.99);
     }
-    
-    80%{
+
+    80% {
         transform: scale(1.01);
     }
 
@@ -76,15 +77,15 @@ button {
 }
 
 button {
-    color: #2d3436;
+    color: darkorange;
     text-decoration: none;
     border: none;
-    
+
 }
 
 
 button:hover {
-    opacity:0.85;
+    opacity: 0.90;
     animation: rebond 500ms ease-in-out;
 }
 
@@ -101,8 +102,8 @@ ul {
 section li {
     font-size: 24px;
     font-family: 'Raleway', sans-serif;
-    color: #dfe6e9;
-    background-color: #2d3436;
+    color: whitesmoke;
+    background-color: darkorange;
     text-decoration: none;
     list-style: none;
     padding: 0px 30px;
@@ -130,7 +131,7 @@ section li {
 
 .fa-utensils,
 .fa-carrot {
-    color: #2d3436;
+    color: darkorange;
 }
 
 
