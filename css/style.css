@@ -80,12 +80,12 @@ button {
     color: darkorange;
     text-decoration: none;
     border: none;
+    background-color: white;
 
 }
 
 
 button:hover {
-    opacity: 0.90;
     animation: rebond 500ms ease-in-out;
 }
 
