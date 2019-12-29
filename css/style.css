@@ -25,7 +25,7 @@ header {
 
 
 header {
-    background-color: whitesmoke;
+    background-color: ghostwhite;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -80,13 +80,17 @@ button {
     color: darkorange;
     text-decoration: none;
     border: none;
-    background-color: white;
+    background-color: ghostwhite;
 
 }
 
 
 button:hover {
     animation: rebond 500ms ease-in-out;
+}
+
+button:focus{
+    outline: none;
 }
 
 
@@ -102,7 +106,7 @@ ul {
 section li {
     font-size: 24px;
     font-family: 'Raleway', sans-serif;
-    color: whitesmoke;
+    color: ghostwhite;
     background-color: darkorange;
     text-decoration: none;
     list-style: none;
