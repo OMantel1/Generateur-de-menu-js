@@ -7,6 +7,14 @@ function shuffleArray(array) {
     }
 }
 
+// permet d'animer le bouton à chaque click en ajoutant et enlevant la class anim
+document.getElementById("bouton").addEventListener('click', function (){
+      document.getElementById("bouton").classList.add("anim"); //ajout l'anim sur le bouton
+      setTimeout(function () {
+           document.getElementById("bouton").classList.remove("anim");
+        }, 1000);
+  
+});
 
 document.getElementById("bouton").addEventListener('click', function (){
     
