@@ -21,7 +21,52 @@ document.getElementById("bouton").addEventListener('click', function (){
     // change le display none en display flex de #menu
     document.getElementById("menu").style.display = "flex"; 
     
-    let menus = [ "pennes carbonara", "spaguettis bolognaise", "lasagnes", "lasagnes de courgettes", "riz - dinde", "nuggets de poulet maison - crudités","riz pilaf",  "riz - poulet sauce coco", "burger - frites", "pizzas maison", "quiche au saumon", "quiche au thon","salade de crudités", "knacks - lentilles", "courgettes farcies", "hachi parmentier", "gratin dauphinois", "ratatouille - poulet","steack - haricots verts", "escalope de dinde - petits pois", "soupe de légumes", "crêpes salées", "saumon - pommes de terre", "crudités - semoule" ]
+    let menus = [ 
+        "pennes carbonara",
+        "spaguettis bolognaise",
+        "lasagnes", 
+        "lasagnes de courgettes", 
+        "chili con carne", 
+        "nuggets de poulet maison - crudités",
+        "brochettes de poulet miel et beurre de cacahuète",
+        "riz pilaf",  
+        "poulet sauce coco - riz",
+        "risoto poulet chorizo", 
+        "boeuf sauté - riz cantonais",
+        "burger - frites", 
+        "pizzas maison", 
+        "quiche au saumon", 
+        "quiche lorraine - salade",
+        "salade de crudités", 
+        "knacks - lentilles", 
+        "courgettes farcies", 
+        "hachi parmentier", 
+        "gratin dauphinois", 
+        "gratin de courgettes",
+        "poulet - ratatouille",
+        "steack - haricots verts", 
+        "escalope de dinde - petits pois",
+        "escalope de dinde - courgettes à la crème", 
+        "escalope de dinde - riz",
+        "soupe de légumes", 
+        "crêpes salées", 
+        "saumon - pommes de terre", 
+        "salade tomate mozarella", 
+        "brochettes de saumon - riz",
+        "roti de porc à la moutarde - légumes",
+        "raclette",
+        "fondue",
+        "croziflette",
+        "velouté de carottes",
+        "tacos",
+        "hot dog",
+        "butter chicken - cheese nan",
+        "suchis",
+        "poisson - légumes à la vapeur",
+        "tian de légumes",
+        "filet de sole - légumes",
+        "couscous aux légumes"
+    ]
     
     
     shuffleArray(menus);                            // appel de la fonction shuffle
