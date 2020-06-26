@@ -79,7 +79,7 @@ document.getElementById("bouton").addEventListener('click', function (){
 
     
     //Boucle pour afficher le contenu du tableau dans les listes
-    for (i = 0; i <= newMenu.length; i++ ){          // pour chaque element
+    for (i = 0; i < newMenu.length; i++ ){          // pour chaque element
         let liste = document.createElement("li");   // creation d'un element <li>
         liste.textContent= newMenu[i];              //ajout contenu à <li>
         document.getElementById("menu-liste").appendChild(liste); //ajout a la suite de l'id texte
