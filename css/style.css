@@ -50,47 +50,25 @@ ul{
     color: var( --fourth-color);
     font-weight: 300;
 }
-/* 
-@keyframes rebond {
-    from {
-        transform: scale(1);
-    }
-
-    20% {
-        transform: scale(0.98);
-    }
-
-    40% {
-        transform: scale(1.02);
-    }
-
-    60% {
-        transform: scale(0.99);
-    }
-
-    80% {
-        transform: scale(1.01);
-    }
-
-    to {
-        transform: scale(1.00);
-    }
-
-} */
-
-
 
 button:focus {
     outline: none;
 }
-/* 
-.anim {
-    animation: rebond 500ms ease-in-out;
-} */
 
 
 /*utile pour le javascript*/
 #menu {
+    display: none;
+}
+
+.msgError {
+    padding: 50px 0 50px;
+    font-size: 24px;
+    font-weight: lighter;
+    color: var(--Third-color);
+}
+
+.msgHidden {
     display: none;
 }
 
