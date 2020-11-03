@@ -21,11 +21,16 @@ document.getElementById("bouton").addEventListener('click', function () {
 
 
 function displayNewList(newMenu) {
-    for (i = 0; i < newMenu.length; i++) {
-        let liste = document.createElement("li");
-        liste.textContent = newMenu[i];
-        document.getElementById("menu-liste").appendChild(liste);
-    };
+
+    let liste = `
+        <li><p>Lundi</p> <p>${newMenu[0]} </p></li>
+        <li><p>Mardi</p> <p>${newMenu[1]} </p></li>
+        <li><p>Mercredi</p> <p>${newMenu[2]}</p></li>
+        <li><p>Jeudi</p> <p>${newMenu[3]}</p></li>
+        <li><p>Vendredi</p> <p>${newMenu[4]}</p></li>
+        <li><p>Samedi</p> <p>${newMenu[5]}</p></li>
+        <li><p>Dimanche</p> <p>${newMenu[6]}</p></li>`
+        document.getElementById("menu-liste").innerHTML = liste;
     document.getElementById("menu").style.display = "flex";
 }
 

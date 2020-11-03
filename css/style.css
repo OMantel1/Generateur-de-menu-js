@@ -11,7 +11,8 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 62.4%;
 }
-main{
+
+main {
     margin-left: 100px;
     margin-top: 32px;
     padding-left: 32px;
@@ -24,7 +25,7 @@ header h1 {
     font-size: 1.6rem;
 }
 
-#bouton{
+#bouton {
     color: white;
     background-color: var(--main-color);
     padding: 8px 22px;
@@ -32,22 +33,36 @@ header h1 {
     font-weight: 900;
 }
 
-#bouton:hover{
+#bouton:hover {
     color: var(--main-color);
     background-color: var(--second-color);
     border: solid 1px var(--main-color);
 }
 
-#menu{
-    padding: 64px 0 0 0 ;
+#menu {
+    padding: 64px 0 0 0;
 }
-ul{
+
+#menu li {
+    display: grid;
+    grid-template-columns: 96px 1fr;
+    width: 100%;
+}
+li p {
+    margin: 2px;
+}
+
+#menu li p:first-child {
+    color: var(--main-color)
+}
+
+ul {
     list-style: square;
     /* list-style-type: none; */
     margin: 0;
     padding: 0;
     font-size: 1.2rem;
-    color: var( --fourth-color);
+    color: var(--fourth-color);
     font-weight: 300;
 }
 
@@ -72,9 +87,9 @@ button:focus {
     display: none;
 }
 
-@media screen and (max-width: 1024px){
-    main{
+@media screen and (max-width: 1024px) {
+    main {
         margin-left: 10px;
     }
-    
+
 }
