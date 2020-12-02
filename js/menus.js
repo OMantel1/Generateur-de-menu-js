@@ -1,32 +1,35 @@
-document.getElementById("bouton").addEventListener('click', function () {
-    fetch("menus.json")
-        .then((response) => {
-            if (response.ok) {
-                return response.json();
+window.addEventListener("DOMContentLoaded", () =>{
+    document.getElementById("bouton").addEventListener('click', function () {
+        fetch("menus.json")
+            .then((response) => {
+                if (response.ok) {
+                    return response.json();
+    
+                } else {
+                    throw Error = "Aie... il semblerait qu'il y ait une erreur";
+                }
+            })
+            .then(response => {
+    
+                let cheatMealList = shuffleArray(response.filter(x => x.cheatMeal === true));
+                let pastaList = shuffleArray(response.filter(x => x.sideDish === "pasta"));
+                let vegetablesList = shuffleArray(response.filter(x => x.sideDish === "vegetables"));
+                let potatoesList = shuffleArray(response.filter(x => x.sideDish === "potatoes" && x.cheatMeal === false));
+                let othersideDishList = shuffleArray(response.filter(x => x.sideDish !== 'potatoes' && x.sideDish !== 'pasta'  && x.sideDish !== 'vegetables'&& x.cheatMeal === false));
+                displayNewList(pastaList, vegetablesList, potatoesList, cheatMealList, othersideDishList);
+                // console.log(cheatMealList, pastaList, vegetablesList, potatoesList, othersideDishList)
+            })
+            .catch(error => {
+                console.log(error);
+                sendMsgError(error);
+            });
+    });
+    
+    
 
-            } else {
-                throw Error = "Aie... il semblerait qu'il y ait une erreur";
-            }
-        })
-        .then(response => {
-
-            let cheatMealList = shuffleArray(response.filter(x => x.cheatMeal === true));
-            let pastaList = shuffleArray(response.filter(x => x.sideDish === "pasta"));
-            let vegetablesList = shuffleArray(response.filter(x => x.sideDish === "vegetables"));
-            let potatoesList = shuffleArray(response.filter(x => x.sideDish === "potatoes" && x.cheatMeal === false));
-            let othersideDishList = shuffleArray(response.filter(x => x.sideDish !== 'potatoes' && x.sideDish !== 'pasta'  && x.sideDish !== 'vegetables'&& x.cheatMeal === false));
-            displayNewList(pastaList, vegetablesList, potatoesList, cheatMealList, othersideDishList);
-            // console.log(cheatMealList, pastaList, vegetablesList, potatoesList, othersideDishList)
-        })
-        .catch(error => {
-            console.log(error);
-            sendMsgError(error);
-        });
-});
-
-
+})
 function displayNewList(pasta, vegetables, potatoes, cheatMeal, other) {
-
+    
     let liste = `
         <li><p>Lundi</p> <p>${vegetables[0].meal} </p></li>
         <li><p>Mardi</p> <p>${pasta[0].meal} </p></li>
@@ -53,3 +56,5 @@ function sendMsgError(elt) {
     msgError.classList.remove("msgHidden");
     msgError.innerHTML = elt;
 }
+
+export { displayNewList, shuffleArray, sendMsgError};
