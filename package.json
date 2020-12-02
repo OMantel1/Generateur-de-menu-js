@@ -1,0 +1,24 @@
+{
+  "name": "generateur-de-menu",
+  "version": "1.0.0",
+  "description": "Générateur de menu en javascript",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OMantel1/Generateur-de-menu-js.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/OMantel1/Generateur-de-menu-js/issues"
+  },
+  "homepage": "https://github.com/OMantel1/Generateur-de-menu-js#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.12.7",
+    "babel-jest": "^26.6.3",
+    "jest": "^26.6.3"
+  }
+}
