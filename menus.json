@@ -29,6 +29,12 @@
         "cheatMeal": false
     },
     {
+        "meal": "Pates au thon sauce tomate",
+        "meat": true,
+        "sideDish": "pasta",
+        "cheatMeal": false
+    },
+    {
         "meal": "pizza maison",
         "meat": false,
         "sideDish": "other",
@@ -168,7 +174,7 @@
         "cheatMeal": false
     },
     {
-        "meal": "riz pilat",
+        "meal": "riz pilaf",
         "meat": false,
         "sideDish": "rice",
         "cheatMeal": false
@@ -254,6 +260,12 @@
     {
         "meal": "knacks / lentilles",
         "meat": true,
+        "sideDish": "vegetables",
+        "cheatMeal": false
+    },
+    {
+        "meal": "riz aux lentilles et aux oignons",
+        "meat": false,
         "sideDish": "vegetables",
         "cheatMeal": false
     },
