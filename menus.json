@@ -2,301 +2,357 @@
         "meal": "pates carbonara",
         "meat": true,
         "sideDish": "pasta",
-        "cheatMeal": false
+        "cheatMeal": false,
+        "healthy": false
     },
     {
         "meal": "pates au pesto",
         "meat": false,
         "sideDish": "pasta",
-        "cheatMeal": false
+        "cheatMeal": false,
+        "healthy": false    
+    },
+    {
+        "meal": "pates sautées tomates / oignons",
+        "meat": false,
+        "sideDish": "pasta",
+        "cheatMeal": false,
+        "healthy": false    
     },
     {
         "meal": "spaghettis bolognaise",
         "meat": true,
         "sideDish": "pasta",
-        "cheatMeal": false
+        "cheatMeal": false,
+        "healthy": false    
     },
     {
         "meal": "lasagnes",
         "meat": true,
         "sideDish": "pasta",
-        "cheatMeal": false
+        "cheatMeal": false,
+        "healthy": false
     },
     {
         "meal": "lasagnes aux courgettes",
         "meat": false,
         "sideDish": "pasta",
-        "cheatMeal": false
-    },
-    {
-        "meal": "Pates au thon sauce tomate",
-        "meat": true,
-        "sideDish": "pasta",
-        "cheatMeal": false
+        "cheatMeal": false,
+        "healthy": false    
     },
     {
         "meal": "pizza maison",
         "meat": false,
         "sideDish": "other",
-        "cheatMeal": true
+        "cheatMeal": true,
+        "healthy": false
     },
-
     {
         "meal": "tacos",
         "meat": true,
         "sideDish": "vegetables",
-        "cheatMeal": true
+        "cheatMeal": true,
+        "healthy": false
     },
     {
         "meal": "roulés au chorizo / salade de tomates",
         "meat": true,
         "sideDish": "vegetables",
-        "cheatMeal": true
+        "cheatMeal": true,
+        "healthy": false
     },
     {
         "meal": "japonais",
         "meat": true,
         "sideDish": "rice",
-        "cheatMeal": true
+        "cheatMeal": true,
+        "healthy": false
     },
     {
         "meal": "gratin dauphinois",
         "meat": false,
         "sideDish": "potatoes",
-        "cheatMeal": false
+        "cheatMeal": true,
+        "healthy": false
+    },
+    {
+        "meal": "tartiflette",
+        "meat": false,
+        "sideDish": "potatoes",
+        "cheatMeal": true,
+        "healthy": false
     },
     {
         "meal": "butter chicken / riz / cheese nan",
         "meat": true,
         "sideDish": "rice",
-        "cheatMeal": false
+        "cheatMeal": false,
+        "healthy": true
     },
     {
         "meal": "burger / frites",
         "meat": true,
         "sideDish": "potatoes",
-        "cheatMeal": false
+        "cheatMeal": true,
+        "healthy": false
+    },
+    {
+        "meal": "hachi parmentier",
+        "meat": true,
+        "sideDish": "potatoes",
+        "cheatMeal": true,
+        "healthy": false
     },
     {
         "meal": "gratin de courgettes",
         "meat": false,
         "sideDish": "vegetables",
-        "cheatMeal": false
+        "cheatMeal": false,
+        "healthy": true
     },
     {
         "meal": "salade de crudités",
         "meat": false,
         "sideDish": "vegetables",
-        "cheatMeal": false
+        "cheatMeal": false,
+        "healthy": true
     },
     {
         "meal": "courgettes farcies",
         "meat": true,
         "sideDish": "vegetables",
-        "cheatMeal": false
+        "cheatMeal": false,
+        "healthy": true
     },
     {
         "meal": "filet de poulet / ratatouille",
         "meat": true,
         "sideDish": "vegetables",
-        "cheatMeal": false
+        "cheatMeal": false,
+        "healthy": true
     },
     {
         "meal": "steack / haricots verts",
         "meat": true,
         "sideDish": "vegetables",
-        "cheatMeal": false
+        "cheatMeal": false,
+        "healthy": true
+    },
+    {
+        "meal": "filter de boeuf / salade verte",
+        "meat": true,
+        "sideDish": "vegetables",
+        "cheatMeal": true,
+        "healthy": true
     },
     {
         "meal": "escalope de dinde / petits pois",
         "meat": true,
         "sideDish": "vegetables",
-        "cheatMeal": false
+        "cheatMeal": false,
+        "healthy": true
     },
     {
         "meal": "emincé de dinde / courgettes à la creme",
         "meat": true,
         "sideDish": "vegetables",
-        "cheatMeal": false
+        "cheatMeal": false,
+        "healthy": false
     },
     {
         "meal": "tomates mozarella",
         "meat": false,
         "sideDish": "vegetables",
-        "cheatMeal": false
+        "cheatMeal": false,
+        "healthy": true
     },
     {
         "meal": "velouté de carottes",
         "meat": false,
         "sideDish": "vegetables",
-        "cheatMeal": false
+        "cheatMeal": false,
+        "healthy": true
     },
     {
         "meal": "roti de porc à la moutarde / légumes sautés",
         "meat": true,
         "sideDish": "vegetables",
-        "cheatMeal": false
+        "cheatMeal": false,
+        "healthy": true
     },
     {
-        "meal": "poisson / légumes vapeur",
+        "meal": "poisson / carottes vapeur",
         "meat": true,
         "sideDish": "vegetables",
-        "cheatMeal": false
+        "cheatMeal": false,
+        "healthy": true
     },
     {
         "meal": "tian de légume",
         "meat": false,
         "sideDish": "vegetables",
-        "cheatMeal": false
+        "cheatMeal": false,
+        "healthy": true
     },
     {
-        "meal": "filet de sole / légumes",
-        "meat": false,
+        "meal": "filet de sole / pommes de terres vapeur",
+        "meat": true,
         "sideDish": "vegetables",
-        "cheatMeal": false
+        "cheatMeal": false,
+        "healthy": true
     },
     {
-        "meal": "semoules / légumes ",
+        "meal": "semoules / courgettes / carottes / pois chiches ",
         "meat": false,
         "sideDish": "vegetables",
-        "cheatMeal": false
+        "cheatMeal": false,
+        "healthy": true
     },
     {
         "meal": "soupe de légumes",
         "meat": false,
         "sideDish": "vegetables",
-        "cheatMeal": false
-    },
-    {
-        "meal": "filter de sole / légumes",
-        "meat": false,
-        "sideDish": "vegetables",
-        "cheatMeal": false
+        "cheatMeal": false,
+        "healthy": true
     },
     {
         "meal": "riz pilaf",
         "meat": false,
         "sideDish": "rice",
-        "cheatMeal": false
+        "cheatMeal": false,
+        "healthy": true
     },
     {
-        "meal": "poulet sauce coco / riz",
+        "meal": "poulet / sauce tomate - lait de coco / riz",
         "meat": true,
         "sideDish": "rice",
-        "cheatMeal": false
+        "cheatMeal": false,
+        "healthy": true
     },
     {
         "meal": "risoto au chorizo",
         "meat": true,
         "sideDish": "rice",
-        "cheatMeal": false
+        "cheatMeal": false,
+        "healthy": false
     },
     {
         "meal": "boeuf sauté / semoule",
         "meat": true,
         "sideDish": "other",
-        "cheatMeal": false
+        "cheatMeal": false,
+        "healthy": false
     },
     {
         "meal": "saumon / riz",
         "meat": true,
         "sideDish": "rice",
-        "cheatMeal": false
+        "cheatMeal": false,
+        "healthy": true
     },
     {
         "meal": "brochettes de saumon yakitori / riz complet",
         "meat": true,
         "sideDish": "rice",
-        "cheatMeal": false
+        "cheatMeal": false,
+        "healthy": false
     }, 
     {
         "meal": "suchis",
         "meat": true,
         "sideDish": "rice",
-        "cheatMeal": false
+        "cheatMeal": false,
+        "healthy": false
     },
     {
         "meal": "chili con carne",
         "meat": true,
         "sideDish": "rice",
-        "cheatMeal": false
-    },
-    {
-        "meal": "cordon blue / petits pois",
-        "meat": true,
-        "sideDish": "vegetables",
-        "cheatMeal": false
+        "cheatMeal": false,
+        "healthy": true
     },
     {
         "meal": "nuggets maison / carottes rapées",
         "meat": true,
         "sideDish": "vegetables",
-        "cheatMeal": false
+        "cheatMeal": false,
+        "healthy": true
     },
     {
         "meal": "brochettes de poulet miel, beurre de cacahuète / salade de tomates ",
         "meat": true,
         "sideDish": "vegetables",
-        "cheatMeal": false
+        "cheatMeal": false,
+        "healthy": false
     },
     {
         "meal": "brochettes de poulet yakitori / riz",
         "meat": false,
         "sideDish": "vegetables",
-        "cheatMeal": false
+        "cheatMeal": false,
+        "healthy": false
     },
     {
         "meal": "quiche au saumon / comcombres",
         "meat": true,
         "sideDish": "vegetables",
-        "cheatMeal": false
+        "cheatMeal": false,
+        "healthy": false
     },
     {
         "meal": "quiche lorraine / salade",
         "meat": true,
         "sideDish": "vegetables",
-        "cheatMeal": false
+        "cheatMeal": false,
+        "healthy": false
     },
     {
         "meal": "knacks / lentilles",
         "meat": true,
         "sideDish": "vegetables",
-        "cheatMeal": false
+        "cheatMeal": false,
+        "healthy": true
     },
     {
         "meal": "riz aux lentilles et aux oignons",
         "meat": false,
         "sideDish": "vegetables",
-        "cheatMeal": false
+        "cheatMeal": false,
+        "healthy": true
     },
     {
         "meal": "escalope de dinde / quinoa",
         "meat": true,
         "sideDish": "other",
-        "cheatMeal": false
+        "cheatMeal": false,
+        "healthy": true
     },
     {
         "meal": "crèpes salées / salade",
         "meat": true,
         "sideDish": "vegetables",
-        "cheatMeal": false
+        "cheatMeal": false,
+        "healthy": false
     },
     {
         "meal": "filet de saumon / pommes de terres vapeur",
         "meat": true,
         "sideDish": "potatoes",
-        "cheatMeal": false
+        "cheatMeal": false,
+        "healthy": true
     },
     {
         "meal": "pommes de terres sautés",
-        "meat": true,
+        "meat": false,
         "sideDish": "potatoes",
-        "cheatMeal": false
+        "cheatMeal": false,
+        "healthy": false
     },
     {
         "meal": "hotDog / salade de crudités",
         "meat": true,
         "sideDish": "vegetables",
-        "cheatMeal": false
+        "cheatMeal": false,
+        "healthy": false
     }
 ]
