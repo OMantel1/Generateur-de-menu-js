@@ -1,43 +1,35 @@
 window.addEventListener("DOMContentLoaded", () =>{
-    document.getElementById("bouton").addEventListener('click', function () {
-        fetch("menus.json")
-            .then((response) => {
-                if (response.ok) {
-                    return response.json();
-    
-                } else {
-                    throw Error = "Aie... il semblerait qu'il y ait une erreur";
-                }
-            })
-            .then(response => {
-    
-                let cheatMealList = shuffleArray(response.filter(x => x.cheatMeal === true));
-                let pastaList = shuffleArray(response.filter(x => x.sideDish === "pasta"));
-                let vegetablesList = shuffleArray(response.filter(x => x.sideDish === "vegetables"));
-                let potatoesList = shuffleArray(response.filter(x => x.sideDish === "potatoes" && x.cheatMeal === false));
-                let othersideDishList = shuffleArray(response.filter(x => x.sideDish !== 'potatoes' && x.sideDish !== 'pasta'  && x.sideDish !== 'vegetables'&& x.cheatMeal === false));
-                displayNewList(pastaList, vegetablesList, potatoesList, cheatMealList, othersideDishList);
-                // console.log(cheatMealList, pastaList, vegetablesList, potatoesList, othersideDishList)
-            })
-            .catch(error => {
-                console.log(error);
-                sendMsgError(error);
-            });
+    document.getElementById("bouton").addEventListener('click', async function () {
+        const response = await axios.get("menus.json")
+        if (response.status !== 200) {
+            return sendMsgError("Aie... il semblerait qu'il y ait une erreur");
+        }
+            
+        const menus = response.data
+        const healtyAndVegetables = shuffleArray(menus.filter(x => x.healthy === true && x.sideDish === 'vegetables'))
+        const healtyAndNotVegetables = shuffleArray(menus.filter(x => x.healthy === true && x.sideDish !== 'vegetables'))
+        const pastaList = shuffleArray(menus.filter(x => x.sideDish === "pasta" && x.healthy === false));
+        const cheatMealList = shuffleArray(menus.filter(x => x.cheatMeal === true));
+
+        displayNewList({ healtyAndVegetables,  healtyAndNotVegetables, pastaList, cheatMealList});
     });
     
     
 
 })
-function displayNewList(pasta, vegetables, potatoes, cheatMeal, other) {
-    
+
+function displayNewList({ healtyAndVegetables,  healtyAndNotVegetables, pastaList, cheatMealList }) {
     let liste = `
-        <li><p>Lundi</p> <p>${vegetables[0].meal} </p></li>
-        <li><p>Mardi</p> <p>${pasta[0].meal} </p></li>
-        <li><p>Mercredi</p> <p>${vegetables[1].meal}</p></li>
-        <li><p>Jeudi</p> <p>${other[0].meal}</p></li>
-        <li><p>Vendredi</p> <p>${cheatMeal[0].meal}</p></li>
-        <li><p>Samedi</p> <p>${other[1].meal}</p></li>
-        <li><p>Dimanche</p> <p>${potatoes[1].meal}</p></li>`
+        <li><p>Lundi</p> <p>${healtyAndVegetables[0].meal} </p></li>
+        <li><p>Mardi</p> <p>${pastaList[0].meal} </p></li>
+        <li><p>Mercredi</p> <p>${healtyAndNotVegetables[0].meal}</p></li>
+        <li><p>Jeudi</p> <p>${healtyAndVegetables[1].meal}</p></li>
+        <li><p>Vendredi</p> <p>${cheatMealList[0].meal}</p></li>
+        <li><p>Samedi midi</p> <p>${healtyAndNotVegetables[1].meal}</p></li>
+        <li><p>Samedi soir</p> <p>${cheatMealList[1].meal}</p></li>
+        <li><p>Dimanche midi</p> <p>${pastaList[1].meal}</p></li>
+        <li><p>Dimanche soir</p> <p>${healtyAndVegetables[2].meal}</p></li>`
+        
     document.getElementById("menu-liste").innerHTML = liste;
     document.getElementById("menu").style.display = "flex";
 }
