@@ -118,6 +118,13 @@
         "healthy": true
     },
     {
+        "meal": "sandwich pain khebab crudités / poulet",
+        "meat": true,
+        "sideDish": "vegetables",
+        "cheatMeal": false,
+        "healthy": true
+    },
+    {
         "meal": "courgettes farcies",
         "meat": true,
         "sideDish": "vegetables",
