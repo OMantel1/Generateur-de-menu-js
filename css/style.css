@@ -45,9 +45,10 @@ header h1 {
 
 #menu li {
     display: grid;
-    grid-template-columns: 96px 1fr;
+    grid-template-columns: 140px 1fr;
     width: 100%;
 }
+
 li p {
     margin: 2px;
 }
@@ -92,4 +93,7 @@ button:focus {
         margin-left: 10px;
     }
 
+    #menu li {
+        display: block;
+    }
 }
