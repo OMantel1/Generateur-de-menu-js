@@ -13,9 +13,6 @@ window.addEventListener("DOMContentLoaded", () =>{
 
         displayNewList({ healtyAndVegetables,  healtyAndNotVegetables, pastaList, cheatMealList});
     });
-    
-    
-
 })
 
 function displayNewList({ healtyAndVegetables,  healtyAndNotVegetables, pastaList, cheatMealList }) {
@@ -25,6 +22,7 @@ function displayNewList({ healtyAndVegetables,  healtyAndNotVegetables, pastaLis
         <li><p>Mercredi</p> <p>${healtyAndNotVegetables[0].meal}</p></li>
         <li><p>Jeudi</p> <p>${healtyAndVegetables[1].meal}</p></li>
         <li><p>Vendredi</p> <p>${cheatMealList[0].meal}</p></li>
+        <br>
         <li><p>Samedi midi</p> <p>${healtyAndNotVegetables[1].meal}</p></li>
         <li><p>Samedi soir</p> <p>${cheatMealList[1].meal}</p></li>
         <li><p>Dimanche midi</p> <p>${pastaList[1].meal}</p></li>
